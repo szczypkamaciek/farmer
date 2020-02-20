@@ -1,5 +1,5 @@
-<li *ngIf="animal">
-  <img src="./images/{{animal.name}}.png" alt="{{animal.name}}Picture">
+<li *ngIf="animal.hasOwnProperty('quantity')">
+  <img src="./assets/{{animal.name}}.png" alt="{{animal.name}}Picture" height="50" width="50">
   <div>
     <p>{{animal.name}}</p>
     <p>{{animal.quantity}}</p>
