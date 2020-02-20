@@ -6,7 +6,7 @@ export class AnimalsData {
       quantity: 0,
     },
     {
-      name: 'ship',
+      name: 'sheep',
       value: 6,
       quantity: 0,
     },
@@ -26,12 +26,12 @@ export class AnimalsData {
       quantity: 0,
     },
     {
-      name: 'small dog',
+      name: 'smallDog',
       value: 6,
       quantity: 0,
     },
     {
-      name: 'big dog',
+      name: 'bigDog',
       value: 36,
       quantity: 0,
     },
