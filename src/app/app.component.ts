@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {AnimalsData} from './AnimalsData';
 
 @Component({
@@ -7,18 +7,13 @@ import {AnimalsData} from './AnimalsData';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'farmer';
-  playerOneState = new AnimalsData().state;
-  playerTwoState = new AnimalsData().state;
-  // playerOneState.map(e => arrayPlayerOne.push(e));
-  // arrayPlayerOne =
+  public playerOneState;
+  public playerTwoState;
 
-  sth = (animal) => {
-    console.log('Animal: ' + animal);
-    console.log(this.playerOneState);
-    console.log(AnimalsData);
-    // console.log(animalName + this.playerOneState[animalName].quantity);
-    // console.log(animalName + this.playerOneState[animalName].value);
+  ngOnInit(): void {
+    this.playerOneState = new AnimalsData().state;
+    this.playerTwoState = new AnimalsData().state;
   }
 }
